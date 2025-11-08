@@ -4,35 +4,35 @@ import requests
 # pip install requests
 
 
-def KonversikanCelsiusKeFahrenheit(suhu_celsius):
+def Konversi_celsius_ke_fahrenheit(suhu_celsius):
     return (suhu_celsius * 9 / 5) + 32
 
 
-def KonversikanFahrenheitkeCelsius(suhu_fahrenheit):
+def konversi_fahrenheit_ke_celsius(suhu_fahrenheit):
     return (suhu_fahrenheit - 32) * 5 / 9
 
 
-def convert_currency_api(amount, from_currency, to_currency):
+def konverter_mata_uang_api(jumlah, dari_mata_uang, ke_mata_uang):
     try:
         response = requests.get(
-            f"https://open.er-api.com/v6/latest/{from_currency.upper()}"
+            f"https://open.er-api.com/v6/latest/{dari_mata_uang.upper()}"
         )
         data = response.json()
 
         if response.status_code == 200 and data["result"] == "success":
             rates = data["rates"]
-            if from_currency.upper() not in rates or to_currency.upper() not in rates:
-                return "Invalid currency code(s)."
+            if dari_mata_uang.upper() not in rates or ke_mata_uang.upper() not in rates:
+                return "kode mata uang tidak valid(s)."
 
-            converted_amount = amount * rates[to_currency.upper()]
-            return f"{converted_amount:.2f}"
+            jumlah_dikonversikan = jumlah * rates[ke_mata_uang.upper()]
+            return f"{jumlah_dikonversikan:.2f}"
         else:
-            return f"Error fetching rates: {data.get('error-type', 'Unknown error')}"
+            return f"Kesalahan dalam memuat nilai: {data.get('tipe error', 'error tidak diketahui')}"
 
     except requests.exceptions.ConnectionError:
-        return "Network error. Check internet connection."
+        return "Kesalahan jaringan, coba cek lagi koneksi internet mu."
     except Exception as e:
-        return f"An unexpected error occurred: {e}"
+        return f"Terjadi kesalahan tidak terduga: {e}"
 
 
 def convert_cm_to_feet_inches(value_cm):
@@ -48,40 +48,41 @@ def convert_feet_inches_to_cm(feet, inches):
     return f"{length_cm:.2f}"
 
 
-# --- Command-line Interface (for direct execution) ---
 if __name__ == "__main__":
 
-    def convert_temperature_cli():
-        print("\nkamu mau mengonversikan suhu apa?:-")
-        print("1. Celsius ke Faranheit")
-        print("2. Faranheit ke Celsius")
+    def konverter_suhu_cli():
+        print("\nkamu mau mengonversikan suhu apa? pilih salah satu")
+        print("1. Celsius ke Fahrenheit")
+        print("2. Fahrenheit ke Celsius")
         try:
-            choice = int(input("masukkan pilihanmu (1 / 2): "))
+            choice = int(input("masukkan pilihanmu (1 / 2) : "))
             if choice == 1:
-                suhu = float(input("masukkan suhu dalam celcius: "))
+                suhu = float(input("masukkan suhu dalam celcius : "))
                 print(
-                    f"{suhu} derajat celcius sama dengan {KonversikanCelsiusKeFahrenheit(suhu):.2f} derajat faranheit.\n"
+                    f"{suhu} derajat celcius sama dengan {Konversi_celsius_ke_fahrenheit(suhu):.2f} derajat fahrenheit.\n"
                 )
             elif choice == 2:
-                suhu = float(input("masukkan suhu dalam fahrenheit: "))
+                suhu = float(input("masukkan suhu dalam fahrenheit : "))
                 print(
-                    f"{suhu} derajat fahrenheit sama dengan {KonversikanFahrenheitkeCelsius(suhu):.2f} derajat celsius.\n"
+                    f"{suhu} derajat fahrenheit sama dengan {konversi_fahrenheit_ke_celsius(suhu):.2f} derajat celsius.\n"
                 )
             else:
-                print("cuma boleh milih 1 atau 2 brooo\n")
+                print("Cuma boleh milih 1 atau 2 brooo\n")
         except ValueError:
-            print("masukkan-nya angka ajalah jan yang lain.\n")
+            print("Tolong masukkan angka aja.\n")
 
-    def convert_currency_cli():
-        print("\n--- Real-time Currency Converter ---")
+    def konverter_mata_uang_cli():
+        print("\n--- KONVERTER MATA UANG REAL-TIME ---")
         try:
-            amount = float(input("Enter amount: "))
-            from_currency = input("From currency (e.g., USD, EUR, GBP): ").upper()
-            to_currency = input("To currency (e.g., USD, EUR, GBP): ").upper()
-            result = convert_currency_api(amount, from_currency, to_currency)
-            print(f"{amount} {from_currency} is equal to {result} {to_currency}\n")
+            dari_mata_uang = input(
+                "Pilih mata uang (Contohnya USD, GBP, UER, IDR): "
+            ).upper()
+            jumlah = float(input("masukkan jumlah: "))
+            ke_mata_uang = input("ke mata uang (Contohya USD, GBP, EUR, IDR): ").upper()
+            result = konverter_mata_uang_api(jumlah, dari_mata_uang, ke_mata_uang)
+            print(f"{jumlah} {dari_mata_uang} setara dengan {result} {ke_mata_uang}\n")
         except ValueError:
-            print("Invalid amount. Please enter a number.\n")
+            print("Jumlah tidak valid, tolong masukkan angka aja.\n")
 
     def convert_lengths_cli():
         print("\nWhich conversion do you want to choose:-")
@@ -105,25 +106,27 @@ if __name__ == "__main__":
         except ValueError:
             print("Invalid input. Please enter a number.\n")
 
-    print("===== Welcome to Value Converter =====")
+    print("===== SELAMAT DATANG DI KONVERTER =====")
     while True:
-        print("Which option would you like to choose:-")
-        print("1. Convert temperature")
-        print("2. Convert currency")
-        print("3. Convert lengths")
-        print("4. Exit")
+        print("kamu mau pilih yang mana? pilih salah satu")
+        print("1. Mengkonversikan suhu")
+        print("2. Mengkonversikan mata uang")
+        print("3. Mengkonversikan panjang")
+        print("4. keluar")
         try:
-            choice = int(input("Enter your choice: "))
+            choice = int(input("masukkan pilihanmu (1 - 4) : "))
             if choice == 1:
-                convert_temperature_cli()
+                konverter_suhu_cli()
             elif choice == 2:
-                convert_currency_cli()
+                konverter_mata_uang_cli()
             elif choice == 3:
                 convert_lengths_cli()
             elif choice == 4:
-                print("Exiting...")
+                print(
+                    "Terima kasih sudah menggunakan konverter ini. Sampai jumpa lagi!"
+                )
                 break
             else:
-                print("Invalid choice. Please select a valid option.\n")
+                print("cuma boleh milih 1 - 4.\n")
         except ValueError:
-            print("Invalid input. Please enter a number.\n")
+            print("yang dimasukkan itu angka.\n")
