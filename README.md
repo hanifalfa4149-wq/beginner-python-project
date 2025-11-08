@@ -2,11 +2,11 @@
 
 # Some beginner friendly python project that i am build, and you aldo can
 
-This GitHub repository, proudly presented by **hanif Alfa Rizky**, offers a collection of some easy Python project ideas designed for beginners. Each project is crafted to provide hands-on experience.
+This GitHub repository, created by **hanif Alfa Rizky**, offers a collection of some easy Python project ideas designed for beginners. Each project is crafted to provide hands-on experience.
 
 ## About The Repo
 
-This repository serves
+This repository contains several projects you can use to practice your coding skills, especially in Python. Don't worry, because all the projects here are intended for those of you who are still new to the world of programming
 
 ## Prerequisites
 
@@ -32,7 +32,7 @@ in this repo you don't need to install libraries, we just using build-in python 
 1. kalkulator CLI
 2. kocokkkan dadu otomatis
 3. game tebak-tebakkan angka
-4. konverter sederhana (untuk suhu, panjang, dan mata uang) --> masih error ini wkwk
+4. konverter sederhana (untuk suhu, panjang, dan mata uang)
 5. 
 6. 
 7. 
@@ -41,20 +41,20 @@ in this repo you don't need to install libraries, we just using build-in python 
 10. 
 
 ## Connect with Me
-*   **LinkedIn**: 
-*   **Instagram**: 
-*   **GitHub**: 
-*   **X (Twitter)**: 
+*   **LinkedIn**: https://www.linkedin.com/in/hanif-alfa-rizki-792831300?utm_source=share_via&utm_content=profile&utm_medium=member_android
+*   **Instagram**: https://www.instagram.com/hnff.rizki?igsh=aTl5bnQxbzAybXdr
+*   **GitHub**: https://github.com/hanifalfa4149-wq
+*   **X (Twitter)**: https://x.com/twntye1ght?t=DlaBF4UBi1rAv88iu4CJ5Q&s=09
 
 ## Conclusion
 this project focused on train your logic without modern tools. i provide you some cool project that you can learn by yourself. this repo targeting some critical progamming foundation skills like:
-    1. syntax and basic concept
-    2. control flow
-    3. functions
-    4. basic data structures
-    5. error handling and testing
-    6. CRUD
-    7. basic algorithm
-    8. introduce the OOP
+1. syntax and basic concept
+2. control flow
+3. functions
+4. basic data structures
+5. error handling and testing
+6. CRUD
+7. basic algorithm
+8. introduce the OOP
 
-## KEEP YOUR JOURNEY
+## KEEP YOUR JOURNEY :)
