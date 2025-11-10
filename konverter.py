@@ -84,27 +84,27 @@ if __name__ == "__main__":
         except ValueError:
             print("Jumlah tidak valid, tolong masukkan angka aja.\n")
 
-    def convert_lengths_cli():
-        print("\nWhich conversion do you want to choose:-")
-        print("1. Centimeters to foot and inches")
-        print("2. Foot and inches to centimeter")
+    def konverter_panjang_cli():
+        print("\nApa yang ingin kamu konversikan?")
+        print("1. Sentimeter ke kaki dan inci")
+        print("2. kaki dan inci ke sentimeter")
         try:
-            choice = int(input("Enter your choice: "))
+            choice = int(input("Maukkan pilihanmu (1 / 2): "))
             if choice == 1:
-                value = float(input("Enter length in cm: "))
+                value = float(input("Masukkan panjang dalam cm: "))
                 print(
-                    f"{value} centimeters is equal to {convert_cm_to_feet_inches(value)}\n"
+                    f"{value} Sentimeter sama dengan {convert_cm_to_feet_inches(value)}\n"
                 )
             elif choice == 2:
-                feet = float(input("Enter length in feet: "))
-                inches = float(input("Enter length in inches: "))
+                feet = float(input("Masukkan panjang dalam satuan kaki: "))
+                inches = float(input("Masukkan panjang dalam satuan inci: "))
                 print(
-                    f"{feet} feet and {inches} inches in centimeters will be {convert_feet_inches_to_cm(feet, inches)}\n"
+                    f"{feet} Kaki dan {inches} inci dalam sentimeter jadinya {convert_feet_inches_to_cm(feet, inches)}\n"
                 )
             else:
-                print("Invalid input...please try again\n")
+                print("IInput salah. Coba lagi\n")
         except ValueError:
-            print("Invalid input. Please enter a number.\n")
+            print("Input salah. Masukkan angka aja brooo.\n")
 
     print("===== SELAMAT DATANG DI KONVERTER =====")
     while True:
@@ -120,7 +120,7 @@ if __name__ == "__main__":
             elif choice == 2:
                 konverter_mata_uang_cli()
             elif choice == 3:
-                convert_lengths_cli()
+                konverter_panjang_cli()
             elif choice == 4:
                 print(
                     "Terima kasih sudah menggunakan konverter ini. Sampai jumpa lagi!"
