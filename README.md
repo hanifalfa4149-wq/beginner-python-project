@@ -1,60 +1,71 @@
-# BEGINNNER-PYTHON-PROJECT
+# 🐍 Beginner Python Projects
 
-# Some beginner friendly python project that i am build, and you aldo can
+[![Python](https://img.shields.io/badge/Python-3.10+-blue?logo=python)](https://www.python.org/)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![GitHub Stars](https://img.shields.io/github/stars/hanifalfa4149-wq/BEGINNER-PYTHON-PROJECT?style=social)](https://github.com/hanifalfa4149-wq/BEGINNER-PYTHON-PROJECT/stargazers)
+[![GitHub Forks](https://img.shields.io/github/forks/hanifalfa4149-wq/BEGINNER-PYTHON-PROJECT?style=social)](https://github.com/hanifalfa4149-wq/BEGINNER-PYTHON-PROJECT/network/members)
 
-This GitHub repository, created by **hanif Alfa Rizky**, offers a collection of some easy Python project ideas designed for beginners. Each project is crafted to provide hands-on experience.
+A collection of beginner-friendly Python projects created by *Hanif Alfa Rizky*.  
+Each project is designed to help you build a solid foundation in Python through hands-on practice.
 
-## About The Repo
+## 📘 About This Repository
 
-This repository contains several projects you can use to practice your coding skills, especially in Python. Don't worry, because all the projects here are intended for those of you who are still new to the world of programming
+This repo contains several simple projects that you can use to practice your coding skills, especially if you’re just starting your Python journey.  
+All projects here are beginner-oriented and use *only built-in Python modules* no external libraries required.
 
-## Prerequisites
+## ⚙ Prerequisites
 
-Before you begin, ensure you have the following installed and set up:
+Before getting started, make sure you have these tools installed:
 
-*   **VS Code**: A modern code editor.
-*   **Python**: Version 3.10 or newer.
-*   **Git**: For version control.
-*   **GitHub Account**: To fork and clone the repository.
+- *VS Code* — your main code editor  
+- *Python* ≥ 3.10  
+- *Git* — for version control  
+- *GitHub account* — to fork and clone repositories
 
-## Getting Started
+## 🚀 Getting Started
 
-1.  **Set up a virtual environment:**
-    ```powershell
-    python -m venv .venv
-    source .venv/bin/activate  # On Windows, use `.venv\Scripts\activate`
-    ```
+1. *Clone the repository*
+   ```bash
+   git clone https://github.com/hanifalfa4149-wq/BEGINNER-PYTHON-PROJECT.git
+   cd BEGINNER-PYTHON-PROJECT
 
-2.  **Install dependencies:**
-in this repo you don't need to install libraries, we just using build-in python modules
+2. Set up a virtual environment
 
-## Projects
-1. kalkulator CLI
-2. kocokkkan dadu otomatis
-3. game tebak-tebakkan angka
-4. konverter sederhana (untuk suhu, panjang, dan mata uang)
-5. 
-6. 
-7. 
-8. 
-9. 
-10. 
+python -m venv .venv
+source .venv/bin/activate   # On Windows: .venv\Scripts\activate
 
-## Connect with Me
-*   **LinkedIn**: https://www.linkedin.com/in/hanif-alfa-rizki-792831300?utm_source=share_via&utm_content=profile&utm_medium=member_android
-*   **Instagram**: https://www.instagram.com/hnff.rizki?igsh=aTl5bnQxbzAybXdr
-*   **GitHub**: https://github.com/hanifalfa4149-wq
-*   **X (Twitter)**: https://x.com/twntye1ght?t=DlaBF4UBi1rAv88iu4CJ5Q&s=09
+3. Install dependencies
+No installation needed, all projects use Python’s built-in modules!
 
-## Conclusion
-this project focused on train your logic without modern tools. i provide you some cool project that you can learn by yourself. this repo targeting some critical progamming foundation skills like:
-1. syntax and basic concept
-2. control flow
-3. functions
-4. basic data structures
-5. error handling and testing
-6. CRUD
-7. basic algorithm
-8. introduce the OOP
+🧩 Projects
 
-## KEEP YOUR JOURNEY :)
+No.	Project Name	Description
+
+1	CLI Calculator	Simple calculator app in terminal
+2	Automatic Dice Roller	Simulate rolling dice using random module
+3	Number Guessing Game	A fun guessing game with random numbers
+4	Simple Converter	Convert temperature, length, and currency
+5	Coming Soon...	More beginner-friendly projects incoming!
+
+📬 Connect with Me
+
+LinkedIn: Hanif Alfa Rizky
+Instagram: @hnff.rizki
+GitHub: hanifalfa4149-wq
+X (Twitter): @twntye1ght
+
+🎯 Conclusion
+
+This project focuses on strengthening your logical thinking and core programming foundations, without relying on advanced frameworks.
+You’ll practice essential concepts such as:
+
+1. Syntax and basic concepts
+2. Control flow
+3. Functions
+4. Basic data structures
+5. Error handling and testing
+6. CRUD operations
+7. Basic algorithms
+8. Introduction to Object-Oriented Programming (OOP)
+
+🚀 Keep Coding. Keep Learning. Keep Growing. 💪
