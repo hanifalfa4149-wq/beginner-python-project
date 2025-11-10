@@ -25,34 +25,33 @@ Before getting started, make sure you have these tools installed:
 ## 🚀 Getting Started
 
 1. *Clone the repository*
-   ```bash
-   git clone https://github.com/hanifalfa4149-wq/BEGINNER-PYTHON-PROJECT.git
-   cd BEGINNER-PYTHON-PROJECT
+    ```bash
+    git clone https://github.com/hanifalfa4149-wq/BEGINNER-PYTHON-PROJECT.git
+    cd BEGINNER-PYTHON-PROJECT
 
 2. Set up a virtual environment
 
-python -m venv .venv
-source .venv/bin/activate   # On Windows: .venv\Scripts\activate
+    ```powershell
+    python -m venv .venv
+    source .venv/bin/activate  # On Windows, use `.venv\Scripts\activate`
+    ```
 
 3. Install dependencies
 No installation needed, all projects use Python’s built-in modules!
 
 🧩 Projects
 
-No.	Project Name	Description
-
-1	CLI Calculator	Simple calculator app in terminal
-2	Automatic Dice Roller	Simulate rolling dice using random module
-3	Number Guessing Game	A fun guessing game with random numbers
-4	Simple Converter	Convert temperature, length, and currency
-5	Coming Soon...	More beginner-friendly projects incoming!
-
+1. CLI Kalkulator
+2. Automatic Dice Roller
+3. Number Guessing Game
+4. Simple Converter
+5. Coming Soon......
 📬 Connect with Me
 
-LinkedIn: Hanif Alfa Rizky
-Instagram: @hnff.rizki
-GitHub: hanifalfa4149-wq
-X (Twitter): @twntye1ght
+*   **LinkedIn**: https://www.linkedin.com/in/hanif-alfa-rizki-792831300?utm_source=share_via&utm_content=profile&utm_medium=member_android
+*   **Instagram**: https://www.instagram.com/hnff.rizki?igsh=aTl5bnQxbzAybXdr
+*   **GitHub**: https://github.com/hanifalfa4149-wq
+*   **X (Twitter)**: https://x.com/twntye1ght?t=DlaBF4UBi1rAv88iu4CJ5Q&s=09
 
 🎯 Conclusion
 
