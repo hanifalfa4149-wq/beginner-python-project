@@ -37,9 +37,10 @@ Before getting started, make sure you have these tools installed:
     ```
 
 3. Install dependencies
+
 No installation needed, all projects use Python’s built-in modules!
 
-🧩 Projects
+## 🧩 Projects
 
 1. CLI Kalkulator
 2. Automatic Dice Roller
@@ -47,14 +48,14 @@ No installation needed, all projects use Python’s built-in modules!
 4. Simple Converter
 5. Coming Soon......
 
-📬 Connect with Me
+## 📬 Connect with Me
 
 *   **LinkedIn**: https://www.linkedin.com/in/hanif-alfa-rizki-792831300?utm_source=share_via&utm_content=profile&utm_medium=member_android
 *   **Instagram**: https://www.instagram.com/hnff.rizki?igsh=aTl5bnQxbzAybXdr
 *   **GitHub**: https://github.com/hanifalfa4149-wq
 *   **X (Twitter)**: https://x.com/twntye1ght?t=DlaBF4UBi1rAv88iu4CJ5Q&s=09
 
-🎯 Conclusion
+## 🎯 Conclusion
 
 This project focuses on strengthening your logical thinking and core programming foundations, without relying on advanced frameworks.
 You’ll practice essential concepts such as:
@@ -68,4 +69,4 @@ You’ll practice essential concepts such as:
 7. Basic algorithms
 8. Introduction to Object-Oriented Programming (OOP)
 
-🚀 Keep Coding. Keep Learning. Keep Growing. 💪
+## 🚀 Keep Coding. Keep Learning. Keep Growing. 💪
