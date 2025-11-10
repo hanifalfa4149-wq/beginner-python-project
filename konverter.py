@@ -35,17 +35,17 @@ def konverter_mata_uang_api(jumlah, dari_mata_uang, ke_mata_uang):
         return f"Terjadi kesalahan tidak terduga: {e}"
 
 
-def convert_cm_to_feet_inches(value_cm):
-    inches = value_cm / 2.54
-    feet = int(inches // 12)
-    remaining_inches = inches % 12
-    return f"{feet} feet and {remaining_inches:.2f} inches"
+def konversi_cm_ke_kaki_inci(nilai_cm):
+    inci = nilai_cm / 2.54
+    kaki = int(inci // 12)
+    sisa_inci = inci % 12
+    return f"{kaki} kaki dan {sisa_inci:.2f} inci"
 
 
-def convert_feet_inches_to_cm(feet, inches):
-    total_inches = (feet * 12) + inches
-    length_cm = total_inches * 2.54
-    return f"{length_cm:.2f}"
+def konversi_kaki_inci_ke_cm(kaki, inci):
+    total_inci = (kaki * 12) + inci
+    panjang_cm = total_inci * 2.54
+    return f"{panjang_cm:.2f}"
 
 
 if __name__ == "__main__":
@@ -89,41 +89,41 @@ if __name__ == "__main__":
         print("1. Sentimeter ke kaki dan inci")
         print("2. kaki dan inci ke sentimeter")
         try:
-            choice = int(input("Maukkan pilihanmu (1 / 2): "))
-            if choice == 1:
-                value = float(input("Masukkan panjang dalam cm: "))
+            pilihan = int(input("Masukkan pilihanmu (1 / 2): "))
+            if pilihan == 1:
+                nilai = float(input("\nMasukkan panjang dalam cm: "))
                 print(
-                    f"{value} Sentimeter sama dengan {convert_cm_to_feet_inches(value)}\n"
+                    f"\n{nilai} Sentimeter sama dengan {konversi_cm_ke_kaki_inci(nilai)}\n"
                 )
-            elif choice == 2:
-                feet = float(input("Masukkan panjang dalam satuan kaki: "))
-                inches = float(input("Masukkan panjang dalam satuan inci: "))
+            elif pilihan == 2:
+                kaki = float(input("\nMasukkan panjang dalam satuan kaki: "))
+                inci = float(input("Masukkan panjang dalam satuan inci: "))
                 print(
-                    f"{feet} Kaki dan {inches} inci dalam sentimeter jadinya {convert_feet_inches_to_cm(feet, inches)}\n"
+                    f"\n{kaki} Kaki dan {inci} inci sama dengan {konversi_kaki_inci_ke_cm(kaki, inci)} cm\n"
                 )
             else:
-                print("IInput salah. Coba lagi\n")
+                print("Input salah. Coba lagi\n")
         except ValueError:
             print("Input salah. Masukkan angka aja brooo.\n")
 
     print("===== SELAMAT DATANG DI KONVERTER =====")
     while True:
-        print("kamu mau pilih yang mana? pilih salah satu")
+        print("\nkamu mau pilih yang mana? pilih salah satu")
         print("1. Mengkonversikan suhu")
         print("2. Mengkonversikan mata uang")
         print("3. Mengkonversikan panjang")
         print("4. keluar")
         try:
-            choice = int(input("masukkan pilihanmu (1 - 4) : "))
-            if choice == 1:
+            pilihan = int(input("masukkan pilihanmu (1 - 4) : "))
+            if pilihan == 1:
                 konverter_suhu_cli()
-            elif choice == 2:
+            elif pilihan == 2:
                 konverter_mata_uang_cli()
-            elif choice == 3:
+            elif pilihan == 3:
                 konverter_panjang_cli()
-            elif choice == 4:
+            elif pilihan == 4:
                 print(
-                    "Terima kasih sudah menggunakan konverter ini. Sampai jumpa lagi!"
+                    "\nTerima kasih sudah menggunakan konverter ini. Sampai jumpa lagi!"
                 )
                 break
             else:
