@@ -1,13 +1,13 @@
 import random
 
 
-def angka_acak():
+def acak_angka():
     range_angka = random.randint(1, 15)
     return range_angka
 
 
 def tebak_angka():
-    angka_random = angka_acak()
+    angka_random = acak_angka()
     percobaan = 3
     print("selamat datang di permainan tebak angka!")
     print("Saya telah memilih sebuah angka antara 1 hingga 15.")
