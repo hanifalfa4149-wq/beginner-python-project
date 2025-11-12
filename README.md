@@ -51,13 +51,6 @@ Before getting started, make sure you have these tools installed:
 | 5 |    *QR Code Generator* | automatic QR code generation by paste your link |
 | 6 | 🚧 Coming Soon... | More beginner-friendly projects incoming! |
 
-## 📬 Connect with Me
-
-*   **LinkedIn**: https://www.linkedin.com/in/hanif-alfa-rizki-792831300?utm_source=share_via&utm_content=profile&utm_medium=member_android
-*   **Instagram**: https://www.instagram.com/hnff.rizki?igsh=aTl5bnQxbzAybXdr
-*   **GitHub**: https://github.com/hanifalfa4149-wq
-*   **X (Twitter)**: https://x.com/twntye1ght?t=DlaBF4UBi1rAv88iu4CJ5Q&s=09
-
 ## 🎯 Conclusion
 
 This project focuses on strengthening your logical thinking and core programming foundations, without relying on advanced frameworks.
